@@ -44,7 +44,7 @@ public class WhitelistManager {
                 while ((l = in.readLine()) != null) {
                     users.add(l.trim().toLowerCase());
                 }
-                SpongeSubWhitelister.getInstance().getLogger().info("Whitelist of " + s + " is updated!");
+                SpongeSubWhitelister.getInstance().getLogger().debug("Whitelist of " + s + " is updated!");
             } catch (IOException e) {
                 SpongeSubWhitelister.getInstance().getLogger().error("The website could be down. We'll keep trying.");
                 e.printStackTrace();

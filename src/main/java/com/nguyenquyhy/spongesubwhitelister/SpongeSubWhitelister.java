@@ -93,9 +93,9 @@ public class SpongeSubWhitelister {
                 .child(exportCmd, "export", "e")
                 .build();
 
-        game.getCommandManager().register(this, mainCommandSpec, "whitelist");
+        game.getCommandManager().register(this, mainCommandSpec, "subwhitelist", "sw");
 
-        getLogger().info("/whitelist command registered.");
+        getLogger().info("/subwhitelist command registered.");
     }
 
     @Listener
